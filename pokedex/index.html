@@ -8,8 +8,8 @@
 
     <header>
         <div class="title-box">
-            <div class="container">
-                <img src="/pokedex/img/pokeball.png" alt="logo pokedex" width="40" height="40" style="float: left; margin-right: 20px;  filter: grayscale(100%) contrast(10);">
+            <div class="container-header">
+                <img src="/pokedex/img/pokeball.png" alt="logo pokedex" width="40" height="40" style="float: left; margin-right: 20px; filter: grayscale(100%) contrast(10);" >
                 <p> <b> POKÉDEX </b></p>
             </div>
         </div>
@@ -17,10 +17,10 @@
 
     <body>
         <div class="container">
-            <div class="columna-izquierda" style="align-items: center;">
+            <div class="columna-izquierda" style="display: flex; justify-content: center;">
                 <div class="body-box">
-                    <img src="/pokedex/img/Type_Fuego.webp" alt="logo fuego" width="40" height="40" style="float: left; margin-left: 10%; margin-right: 10px; filter: grayscale(100%);">
-                    <p style="color: black; margin-top: 3px;"><b>CHARIZARD</b></p>
+                    <img src="/pokedex/img/Type_Fuego.webp" alt="logo fuego" width="40" height="40" style="float:left; filter: grayscale(100%);">
+                    <p style="color: black; margin-top: 3px; display: flex; justify-content: center;"><b>CHARIZARD</b></p>
                     <img src="/pokedex/img/Charizard.png" alt="00005 Charizard" width="300" height="300" style=" filter: brightness(0);">
                 </div>
             </div>
@@ -28,44 +28,44 @@
                 <div class="container body-box2">
                     <div class="columna-izquierda">
                         <ul>
-                            <li style="padding-top: 10px; font-size: medium; margin-bottom: 0px; margin-top: 30px;">
+                            <li class="li-label" style="margin-top: 30px;">
                                 NO.
                             </li>
-                            <li style="padding-top: 0px; color: dimgrey; margin-top: 0px;">
+                            <li class="li-stat">
                                 006
                             </li>
-                            <li style="padding-top: 10px; font-size: medium; margin-bottom: 0px;">
+                            <li class="li-label">
                                 TYPE
                             </li>
-                            <li style="padding-top: 0px; color: dimgrey; margin-top: 0px;">
+                            <li class="li-stat">
                                 FIRE
                             </li>
-                            <li style="padding-top: 10px; font-size: medium; margin-bottom: 0px;">
+                            <li class="li-label">
                                 HEIGHT
                             </li>
-                            <li style="padding-top: 0px; color: dimgrey; margin-top: 0px; margin-bottom: 50px;">
+                            <li class="li-stat" style="margin-bottom: 50px;">
                                 1.7 m
                             </li>
                         </ul>
                     </div>
                     <div class="columna-derecha">
                         <ul>
-                            <li style="padding-top: 10px; font-size: medium; margin-bottom: 0px; margin-top: 30px;">
+                            <li class="li-label" style="margin-top: 30px;">
                                 LEVEL
                             </li>
-                            <li style="padding-top: 0px; color: dimgrey; margin-top: 0px;">
+                            <li class="li-stat">
                                 100
                             </li>
-                            <li style="padding-top: 10px; font-size: medium; margin-bottom: 0px;">
+                            <li class="li-label">
                                 HABILITY
                             </li>
-                            <li style="padding-top: 0px; color: dimgrey; margin-top: 0px;">
+                            <li class="li-stat">
                                 FLAMES
                             </li>
-                            <li style="padding-top: 10px; font-size: medium; margin-bottom: 0px;">
+                            <li class="li-label">
                                 WEIGHT
                             </li>
-                            <li style="padding-top: 0px; color: dimgrey; margin-top: 0px; margin-bottom: 50px;">
+                            <li class="li-stat" style="margin-bottom: 50px;">
                                 90.5 Kg
                             </li>
                         </ul>
@@ -75,4 +75,42 @@
             </div>
           </div>
     </body>
+    <footer>
+        <div class="container" style="display: flex; ; border: 1px solid #ccc; background-color:white; padding: 5px; border-bottom-left-radius: 15px;border-bottom-right-radius: 15px;">
+            <div class="columna-izquierda">
+                <br>
+            </div>
+            <div class="columna-izquierda">
+                <p style="margin-top: 25px; margin-right: 100px; text-align: center; color: dimgray; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> OTHERS </p>
+            </div>
+            <div class="columna-izquierda">
+                <a href="">
+                    <div class="footer-box"">
+                        <img src="/pokedex/img/Squirtle.png" alt="00007 Squirtle" width="75px" style="filter: brightness(0);">
+                    </div>
+                </a>                
+            </div>
+            <div class="columna-izquierda">
+                <a href="">
+                    <div class="footer-box"">
+                        <img src="/pokedex/img/Mewtwo.png" alt="00150 Mewtwo" width="75px" style="filter: brightness(0);">
+                    </div>
+                </a>
+            </div>
+            <div class="columna-izquierda">
+                <a href="">
+                    <div class="footer-box"">
+                        <img src="/pokedex/img/Solgaleo.png" alt="00791 Solgaleo" width="75px" style="filter: brightness(0);">
+                    </div>
+                </a>                
+            </div>
+            <div class="columna-derecha">
+                <a href="">
+                    <div class="footer-box"">
+                        <img src="/pokedex/img/Snorlax.png" alt="00143 Snorlax" width="75px" style="filter: brightness(0);">
+                    </div>
+                </a>                
+            </div>
+        </div>
+    </footer>
 </html>
