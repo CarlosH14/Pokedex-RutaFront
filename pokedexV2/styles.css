@@ -85,27 +85,28 @@ footer {
 }
 
 .poke-body-stat-container {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: flex-end;
-    columns: 2;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%;
     background: rgb(204, 204, 204);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    height: 500px;
     width: 50%;
     margin: 3%;
 }
 
 .poke-stat{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 24px;
     text-align: center;
-    width: 45%;
-    height: 31%;
     padding: 45px;
     color: gray;
+}
+
+.poke-stat h3{
+    width: 50%;
 }
 
 .poke-footer {
@@ -142,4 +143,53 @@ footer {
 
 .poke-footer-pokemons:hover {
     background-color: rgb(80, 80, 80);
+  }
+
+  
+@media screen and (max-width: 700px) {
+
+    .poke-body {
+        columns: 1;
+        display: grid;
+    }
+
+    .poke-body-stat-container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 17%;
+        background: rgb(204, 204, 204);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        width: 90%;
+        margin: 3%;
+        position: relative;
+        z-index: 0;
+        top: -150px;
+    }
+
+    .poke-body-pokemon {
+        filter: brightness(0);
+        flex-wrap: wrap;
+        position: relative;
+        z-index: 1;
+    }
+
+    .poke-stat{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align:center;
+        padding: 5px;
+        color: gray;
+    }
+
+    .poke-stat h3{
+        width: 100%;
+    }
+
+    .poke-footer-others {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        text-align: center;
+        padding: 20px 20px 0 20px;
+    }
   }
